@@ -11,15 +11,18 @@
 
 ## ფაილები
 simple_model.ipynb - მარტივი 3-შრიანი არქიტექტურა
+
 model_2.ipynb - რეგულარიზებული ვერსია BatchNorm-ით და dropout-ით
+
 model_3.ipynb -  შედარებით ღრმა ქსელი მეტი layer-ით
+
 model_4.ipynb - [აღწერა]
 
 
-
+## მოდელები
 ### მოდელი 1: მარტივი CNN
-  (features): 3 Conv2d შრე (32→64→128 ფილტრი)
-  (classifier): Linear(4608→512→7) 
+3 Conv2d შრე (32→64→128 ფილტრი)
+Linear(4608→512→7) 
 ამ მოდელში ვუყენებ მხოლოდ ერთ Dropout შრეს (p=0.5), ოპტიმიზატორად: Adam (lr=0.001), loss: CrossEntropyLoss, არ არის BatchNorm შრეები და არც L2 რეგულარიზაცია.
 შედეგები
 train_acc: 75.99%
